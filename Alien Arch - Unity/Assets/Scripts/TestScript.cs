@@ -20,6 +20,8 @@ public class TestScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+        for (int i = 0;i < 5; i ++)
         Debug.LogWarning(startMessege);
         Debug.Log("I would throw roten fruit at you but it would be a waste of resorces");
         
@@ -33,7 +35,7 @@ public class TestScript : MonoBehaviour
         Debug.Log("you are a waste of space time");
 
         //messageChoice = Random.Range(1, 4);
-        /*
+        
         if (messageChoice == 1)
         {
             Debug.Log(messages[0]);
@@ -58,7 +60,7 @@ public class TestScript : MonoBehaviour
         {
             Debug.Log("you moron that isent a valid message choice");
         }
-        */
+        
         
         if (messages.Length > messageChoice && messageChoice >= 0 )
         {
