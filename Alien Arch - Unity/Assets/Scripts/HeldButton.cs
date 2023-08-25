@@ -25,9 +25,6 @@ public class HeldButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
     // This function is called every frame
     private void Update()
     {
-        Debug.Log(buttonPressed);
-
-
         // If the button is currently pressed...
         if (buttonPressed)
             // ... Consider the button "clicked" and call the function linked on the Button component.

@@ -3,20 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class hole : MonoBehaviour
+public class end : MonoBehaviour
 {
     // pblic variables editable in unity
-    public string targetScene = "level 2";
+    public string targetScene = "End Screen";
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // CONDITION 2
         if (collision.CompareTag("Player"))
-        ChangeScene();
+            ChangeScene();
     }
     public void ChangeScene()
     {
-        SceneManager.LoadScene("Level 2");
+        SceneManager.LoadScene("End Screen");
 
     }
 }
+
